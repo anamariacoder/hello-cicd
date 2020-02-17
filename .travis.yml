@@ -6,7 +6,7 @@ services:
   - docker
 cache:
   directories:
-  - node_modules
+    - node_modules
 env:
   DOCKER_COMPOSE_VERSION: 1.23.2
 
@@ -27,8 +27,7 @@ script:
   - npm test
   - npm run test_client
 
-
 deploy:
   provider: heroku
-  api_key: "8cbccf18-5d49-4cc0-ad65-5b4860110937"
-  app: hello-ci2
+  api_key: "78b85eec-5acc-4b12-a9e7-bd8effd3a89d"
+  app: hello-cicd-anamaria
